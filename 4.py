@@ -1,12 +1,21 @@
 from random import choice
 
 def login(x):
+    '''
+    Функция создает логин пользователя
+    :param x: (list) список со всеми данными пользователя
+    :return: (str) логин ученого, созданные по его ФИО
+    '''
     fio=x[0].split()
     login=fio[0]+'_'+fio[1][0]+fio[2][0]
     return login
 
 
 def parol():
+    '''
+    Функция создает случайный пароль
+    :return: (str) случайный пароль
+    '''
     symb='qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM'
     parol=''
     for i in range(10):
